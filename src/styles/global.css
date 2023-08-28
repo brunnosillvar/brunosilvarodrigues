@@ -1,9 +1,7 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: 'Poppins', ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: 'Outfit';
 
   --background-start: #161616;
   --background-end: #262626;
@@ -14,6 +12,35 @@
   --white-1: #C6C6C6;
   --white-2: #A8A8A8;
   --white-3: #8D8D8D;
+
+  --h1: {
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.105rem;
+  };
+  --h2: {
+    font-size: 2.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.08625rem;
+  };
+  --h3: {
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.0675rem;
+  };
+  --h4: {
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.04875rem;
+  };
 }
 
 /* @media (prefers-color-scheme: dark) {
