@@ -4,10 +4,23 @@ import '../styles/global.css'
 
 import { DefaultSeo } from 'next-seo'
 
+import { useRouter } from "next/router";
+import { IntlProvider } from "react-intl";
+
+import pt from "../locale/pt.json";
+import en from "../locale/en.json";
+
+const messages = {
+  pt,
+  en,
+}
+
 export default function App({
   Component,
   pageProps: { session, ...pageProps },
 }: AppProps) {
+  const { locale } = useRouter()
+
   return (
     <>
       <DefaultSeo
@@ -18,7 +31,9 @@ export default function App({
           siteName: 'Bruno Silva | Personal Website',
         }}
       />
-      <Component {...pageProps} />
+      <IntlProvider locale={locale || ''} messages={messages[locale as keyof typeof messages]}>
+        <Component {...pageProps} />
+      </IntlProvider>
     </>
   )
 }

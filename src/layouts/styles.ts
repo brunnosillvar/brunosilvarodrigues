@@ -1,9 +1,15 @@
-import { styled } from 'styled-components'
+import { styled, css } from 'styled-components'
 
-export const Content = styled.div`
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  margin-top: 56px;
+interface IDefaultLayoutProps {
+  mode: string;
+}
+
+export const Content = styled.div<IDefaultLayoutProps>`
+  ${({mode}) => css`
+      background-color: ${mode === 'dark' ? 'var(--primary-black)' : 'var(--primary-white)'};
+      display: flex;
+      justify-content: center;
+    `
+  }
 `
 
