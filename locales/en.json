@@ -1,0 +1,16 @@
+{
+  "aboutme": {
+    "subtitle": "Hi, I'm Bruno Silva",
+    "title": "Software Engineer & Design UX | UI"
+  },
+  "jobs": {
+    "title_developement": "Development",
+    "body_developement": "Creating solutions and transforming ideas into applications and web software.",
+    "title_ui&ux": "UX & UI",
+    "body_ui&ux": "Designing modern, elegant and intuitive interfaces, and most importantly, with great usability.",
+    "title_pm": "Project management",
+    "body_pm": "Managing technology projects and teams using agile methodologies that impact production and delivery quality.",
+    "title_communication": "Communication",
+    "body_communication": "Communicated in the most didactic and efficient way for understanding in lectures and meetings."
+  }
+}

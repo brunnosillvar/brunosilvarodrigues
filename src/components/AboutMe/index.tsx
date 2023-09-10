@@ -1,19 +1,34 @@
-import Image from "next/image"
-import { Content, Subtitle, Title, Link } from "./styles"
-import { useIntl } from "react-intl"
-import { useModeStore } from "@/context/modeStore"
+import Image from 'next/image'
 
-export default function AboutMe() {
-  // ** Hooks
-  const intl = useIntl()
-  const { mode } = useModeStore()
+import styles from './styles.module.css'
 
+interface AboutMeProps {
+  dictionary: {
+    title: string
+    subtitle: string
+  }
+}
+
+export default function AboutMe({ dictionary }: AboutMeProps) {
   return (
-    <Content>
-      <Image src={'/assets/Bruno.png'} alt="Profile image - Bruno Silva" className="__image_profile_aboutme" width={115} height={115} />
-      <Subtitle mode={mode}>{intl.formatMessage({ id: "aboutme.subtitle" })}</Subtitle>
-      <Title mode={mode}>{intl.formatMessage({ id: "aboutme.title" })}</Title>
-      <Link mode={mode} href="https://read.cv/brunnosillvar" target="_blank">Read.cv</Link>
-    </Content>
+    <div className={styles.__content_about_me}>
+      <Image
+        src={'/assets/Bruno.png'}
+        alt="Profile image - Bruno Silva"
+        className={styles.__image_profile_aboutme}
+        width={115}
+        height={115}
+      />
+      <h2 className={styles.__subtitle}>{dictionary.subtitle}</h2>
+      <h1 className={styles.__title}>{dictionary.title}</h1>
+      <a
+        className={styles.__link_read_cv}
+        href="https://read.cv/brunnosillvar"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Read.cv
+      </a>
+    </div>
   )
 }

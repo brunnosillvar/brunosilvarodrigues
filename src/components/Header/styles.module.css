@@ -1,0 +1,62 @@
+.__header_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 135px;
+
+  @media screen and (max-width: 699px) {
+    justify-content: center;
+  }
+}
+
+.__icons_config {
+  display: flex;
+  gap: 3.1875rem;
+}
+
+.__icon_menu {
+  cursor: pointer;
+}
+
+.__dropdown_language {
+  display: flex;
+  flex-direction: column;
+}
+
+.__options_language {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 2.1rem;
+  margin-left: -0.5rem;
+  width: 100%;
+  max-width: 3.5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  border-radius: 0.4rem;
+}
+
+.__language_item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-radius: 0.4rem;
+  color: var(--secondary-color-2);
+}
+
+.__language_item:hover {
+  background-color: var(--color-2);
+  color: var(--color-4);
+}
+
+.__icons_network {
+  display: flex;
+  gap: 3.1875rem;
+
+  @media screen and (max-width: 699px) {
+    display: none;
+  }
+}

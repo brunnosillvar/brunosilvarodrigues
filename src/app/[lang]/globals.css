@@ -1,0 +1,38 @@
+:root {
+  --font-mono: 'Outfit';
+
+  --color-1: #393939;
+  --color-2: #525252;
+  --color-3: #6F6F6F;
+  --color-4: #C6C6C6;
+  --color-5: #A8A8A8;
+  --color-6: #8D8D8D;
+  --primary-color: #161616;
+  --secondary-color: #262626;
+  --primary-color-2: #F4F4F4;
+  --secondary-color-2: #E0E0E0;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-mono);
+  background: var(--primary-color)
+}
+
+a {
+  text-decoration: none;
+}
+
