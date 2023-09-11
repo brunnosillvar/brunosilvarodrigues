@@ -1,15 +1,6 @@
-import { i18n } from '../../../i18n-config'
-import { Header } from '@/components/Header'
-
-import './globals.css'
-
 import { Outfit } from 'next/font/google'
 
 const outfit = Outfit({ subsets: ['latin'] })
-
-export async function generateStaticParams() {
-  return i18n.locales.map((locale) => ({ lang: locale }))
-}
 
 export default function Root({
   children,
@@ -20,10 +11,7 @@ export default function Root({
 }) {
   return (
     <html lang={params.lang}>
-      <body className={outfit.className}>
-        <Header />
-        {children}
-      </body>
+      <body className={outfit.className}>{children}</body>
     </html>
   )
 }
