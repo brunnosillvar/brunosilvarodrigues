@@ -18,5 +18,5 @@ export default function Root({
 
 export const metadata = {
   title: 'Bruno Silva | Personal Website',
-  description: 'How to do i18n in Next.js 13 within app directory',
+  description: 'My personal website for information about me and my career.',
 }
