@@ -44,9 +44,9 @@
 
 .__body {
   font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.03rem;
-    color: var(--color-3);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.03rem;
+  color: var(--color-3);
 }
